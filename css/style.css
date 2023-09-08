@@ -1,0 +1,172 @@
+.body {
+    background-color: rgb(31, 30, 30);
+    margin: opx;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CBB26A;
+    align-items: center;
+}
+
+.logo{
+    padding: 10px;
+    display: flex;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+.principio {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ text-decoration: none;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegador {
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.pv {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pp {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.s {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.imgpp {
+    width: 350px;
+    height: 400px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #CBB26A;
+    margin: 4px;
+}
+
+.imgpv {
+    width: 350px;
+    height: 400px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-color: #CBB26A;
+    border-style: solid;
+    border-width: 5px;
+    margin: 4px;
+}
+
+.imgs {
+    width: 350px;
+    height: 400px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-color: #CBB26A;
+    border-style: solid;
+    border-width: 5px;
+    margin: 4px;
+}
+
+.p {
+    color:#CBB26A;
+}
+
+.b {
+    color: white;
+}
+
+.foot{
+    background-color: #CBB26A;
+    display: flex;
+    justify-content: center;
+}
+
+.generos{
+    color: white;
+}
+
+.gen {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #CBB26A;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+    height: 50px;
+}
+
+.gene{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.genn{
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.estreno {
+    display: flex;
+    justify-content: flex-end;
+    color: #CBB26A;
+}
+
