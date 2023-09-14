@@ -54,22 +54,7 @@ a {
     list-style: none;
 }
 
-.pv {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 .pp {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.s {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -170,7 +155,7 @@ ul {
     align-items: flex-end;
     flex-wrap: wrap;
     color: #CBB26A;
-    margin-right: 120px;
+    margin-right: 160px;
 }
 
 .fav:hover{
@@ -179,11 +164,12 @@ ul {
 
 .detalle{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;   
     margin-left: 100px;
     margin-right: 100px;
+    
 }
     
 .videodetalle{
@@ -203,9 +189,11 @@ ul {
 .informacion{
     color: #CBB26A;
     display: flex;
-    margin-left: 120px;
+    margin-left: 160px;
     flex-wrap: wrap;
-    margin-right: 120px;
+    margin-right: 160px;
+    justify-content: center;
+    align-items: center;
 }
 
 
