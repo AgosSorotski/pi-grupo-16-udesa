@@ -210,6 +210,9 @@ ul {
 
 /* telefonos */
 @media(max-width: 420px) {
+    * {
+        box-sizing: border-box;
+    }
     .heather.heather ¨{
     height: 200px;
     }
@@ -275,19 +278,29 @@ ul {
      
         background-color: (rgb(200, 0, 0));
         text-align: center;
-        padding: 0px;
-        margin: 20px 0px;
-        height: 55px;
+        padding: 20px 10px;
+        margin: 0px 0px;
+        height: 60px;
+        width: 390px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    
 
     }
 
-}
-
-.con {
+    .con {
     width: 100px;
     display: flex;
     border-radius: 5px;
     font-weight: 800;
     border: solid blue;
     padding: 5px 10px;
+}
+}
+
+.nombreye {
+    color: #CBB26A;
 }
