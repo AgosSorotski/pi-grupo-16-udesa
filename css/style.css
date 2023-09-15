@@ -4,7 +4,7 @@
     padding: 10px;
 }
 
-.titulo {
+.fotoportada {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@ ul {
     color: white;
 }
 
-.foot{
+.nombres{
     background-color: #CBB26A;
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@ ul {
     
 }
 
-.gene{
+.generospys{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,7 +141,7 @@ ul {
     background-color: aliceblue;
 }
 
-.genn{
+.gentitulo{
     font-size: 40px;
     justify-content: center;
     display: flex;
@@ -155,7 +155,7 @@ ul {
     align-items: flex-end;
     flex-wrap: wrap;
     color: #CBB26A;
-    margin-right: 160px;
+    margin-right: 0px;
 }
 
 .fav:hover{
@@ -192,7 +192,7 @@ ul {
     margin-left: 160px;
     flex-wrap: wrap;
     margin-right: 160px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -252,6 +252,13 @@ color: #CBB26A;
     
 }
 
+.colortitulo{
+    color: #CBB26A;
+}
+
+.oculto{
+    display: none;
+}
 
 /* telefonos */
 @media(max-width: 420px) {
@@ -327,7 +334,7 @@ color: #CBB26A;
         height: 50px;
     }
 
-    .foot {
+    .nombres {
         background-color: (rgb(200, 0, 0));
         text-align: center;
         padding: 20px 10px;
@@ -357,20 +364,24 @@ color: #CBB26A;
         margin: 5px;
     }
 
-    .genn{
+    .gentitulo{
         background-color: #CBB26A;
         color: black;
     }
 
    .estreno{
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 32px;
+        margin-right: 32px;
    }
 
     .informacion{
         margin-left: 32px;
         margin-right: 50px;
         justify-content: center;
+    }
+
+    .p{
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 }
