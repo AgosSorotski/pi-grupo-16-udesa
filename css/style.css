@@ -116,7 +116,7 @@ ul {
     color: white;
 }
 
-.gen {
+.tiposdegen {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
@@ -140,7 +140,7 @@ ul {
 
   }
 
-.gen:hover{
+.tiposdegen:hover{
     background-color: aliceblue;
 }
 
@@ -363,7 +363,7 @@ color: #CBB26A;
         justify-content: center;
     }
 
-    .gen{
+    .tiposdegen{
         margin: 5px;
     }
 
