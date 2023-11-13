@@ -54,14 +54,17 @@ a {
     list-style: none;
 }
 
-.pp {
-    flex-direction: row;
+.pp{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
-
+.peliculaslist{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 ul {
     list-style: none;
     padding: 0px;
