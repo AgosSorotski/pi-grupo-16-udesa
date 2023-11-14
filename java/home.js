@@ -10,9 +10,9 @@ fetch (urlPeliculas)
         let pelisp=document.querySelector(".pp")
         let peliculas=[];
         for (let i=0;i<6; i++){
-            peliculas+= `<a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculaslist">
+            peliculas+= `<a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp">
                 <h3>${data.results[i].title}</h3>
-                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="fotopeli">
+                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="imgpp">
                 <p> Fecha estreno: ${data.results[i].release_date}
             </a>`;
         }
