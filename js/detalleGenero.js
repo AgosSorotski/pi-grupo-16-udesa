@@ -12,9 +12,14 @@ fetch (urlGenero)
         console.log(data);
         let pp=document.querySelector(".pp")
         let detgeneros= " "
-        for (let i = 0; i < data.results.length; i++) {
+        for (let i = 0; i < data.genres.length; i++) {
             detgeneros +=  
-            ``
+            `<article class="borde">
+            <li><a href="./detallePelicula.html">
+            <img class="imgpp"
+                        src="./img/extraordinario.jpg"></a></li> <img class="imgpp" src="${data.results[i].poster_path}"></a></li>
+                    <h4 class="nombreye">${data.genres[i].name}</h4>
+        </article>`
             
         }
         pp.innerHTML=detgeneros
