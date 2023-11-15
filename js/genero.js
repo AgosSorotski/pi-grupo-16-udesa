@@ -10,15 +10,15 @@ fetch (urlGenero)
     })
     .then(function(data){
         console.log(data);
-        let gen=document.querySelector(".generos")
+        let gen=document.querySelector(".generospys")
         let generos= " "
         for (let i = 0; i < data.genres.length; i++) {
             generos +=  
-            `<ul class="generospys">
-            <li><a href="./detalleGenero.html">
-            <h4 class="nombreye"class="tiposdegen" >${data.genres[i].name}</h4>
-            </ul>`
+            `<li class="tiposdegen"> <a href="./detalleGenero.html" >
+            <h4>${data.genres[i].name}</h4></li> </a> `
     }
+
+
     gen.innerHTML=generos
     })
     .catch(function(error){
