@@ -33,6 +33,7 @@ fetch (urlDetalle)
         console.log(data);
         let det = document.querySelector(".informacion");
         let detalle = ""; 
+
             detalle +=  
         ` <p class="estreno" >Fecha estreno: ${data.release_date} </p>
                         <br>
@@ -47,7 +48,7 @@ fetch (urlDetalle)
                         Sinópsis: ${data.overview}
                         <br>
                         <br>
-                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo"> ${data.genres}  </a>
+                        Género:  <a href="./detalleGenero.html?id=${data.genres[0].id}" class="colortitulo"> ${data.genres[0].name}  </a>
                         <br>
                         <br>
                         <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>

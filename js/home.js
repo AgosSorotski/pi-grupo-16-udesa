@@ -46,7 +46,7 @@ fetch (urlMejPeliculas)
         console.log(error);
     })
 
-let urlloqv= "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&api_key=325b851d442abfa1f66681afca0f296b"  //cambiar la api
+let urlloqv= "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1&api_key=325b851d442abfa1f66681afca0f296b"  //cambiar la api
 
 fetch (urlloqv)
     .then(function(response){
