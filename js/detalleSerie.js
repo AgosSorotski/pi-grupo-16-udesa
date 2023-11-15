@@ -38,7 +38,7 @@ fetch (urlDetalle)
                         <br>
                         <br>
                         <p>
-                        Calificacion: ${data.popularity} 
+                        Calificacion: ${datavote_average} 
                         <br>
                         <br>
                         Duracion : ${data.runtime}
