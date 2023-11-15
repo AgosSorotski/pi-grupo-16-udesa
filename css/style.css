@@ -59,6 +59,16 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.mp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.lqv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .peliculaslist{
     color: white;
     display: flex;

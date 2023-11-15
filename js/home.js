@@ -10,11 +10,11 @@ fetch (urlPeliculas)
         let pelisp=document.querySelector(".pp")
         let peliculas=[];
         for (let i=0;i<6; i++){
-            peliculas+= `<a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp">
-                <h3>${data.results[i].title}</h3>
+            peliculas+= `<section class="borde"> <a  href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp" >
                 <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="imgpp">
-                <p> Fecha estreno: ${data.results[i].release_date}
-            </a>`;
+                <h3 class="nombreye" >${data.results[i].title}</h3>
+                <p class="nombreye"> Fecha estreno: ${data.results[i].release_date}</p>
+            </a> </section>`;
         }
         pelisp.innerHTML=peliculas
     })
@@ -34,11 +34,11 @@ fetch (urlMejPeliculas)
         let mpelis=document.querySelector(".mp")
         let mpeliculas=[];
         for (let i=0;i<6; i++){
-            mpeliculas+= `<a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculaslist">
-                <h3>${data.results[i].title}</h3>
-                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="fotopeli"/>
-                <p> Fecha estreno: ${data.results[i].release_date}
-            </a>`;
+            mpeliculas+= `<section class="borde"> <a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp" >
+                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="imgpp">
+                <h3 class="nombreye">${data.results[i].title}</h3>
+                <p class="nombreye"> Fecha estreno: ${data.results[i].release_date}</p>
+                </a> </section>`;
             }
         mpelis.innerHTML=mpeliculas
     })
@@ -58,11 +58,11 @@ fetch (urlloqv)
         let lqvpelis=document.querySelector(".lqv")
         let lpeliculas=[];
         for (let i=0;i<6; i++){
-            lpeliculas+= `<a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculaslist">
-                <h3>${data.results[i].title}</h3>
-                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="fotopeli"/>
-                <p> Fecha estreno: ${data.results[i].release_date}
-            </a>`;
+            lpeliculas+= `<section class="borde"> <a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp">
+                <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="imgpp"/>
+                <h3 class="nombreye">${data.results[i].title}</h3>
+                <p class="nombreye"> Fecha estreno: ${data.results[i].release_date}</p>
+            </a> </section>`;
         }
         lqvpelis.innerHTML=lpeliculas
     })
