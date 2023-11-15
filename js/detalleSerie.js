@@ -38,7 +38,7 @@ fetch (urlDetalle)
                         <br>
                         <br>
                         <p>
-                        Calificacion: ${datavote_average} 
+                        Calificacion: ${datavote_average} minutos
                         <br>
                         <br>
                         Duracion : ${data.runtime}
@@ -47,11 +47,14 @@ fetch (urlDetalle)
                         Sinópsis: ${data.overview}
                         <br>
                         <br>
-                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo">${data.genres}</a>
+                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo">${data.genres[0].name}, ${data.genres[1].name} </a>
                         <br>
                         <br>
                         <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
-                        
+                        <br>
+                        <br>
+                        <button class="fav">Ver recomendaciones</button> 
+
                         </p> 
                     `;
         

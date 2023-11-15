@@ -42,16 +42,17 @@ fetch (urlDetalle)
                         Calificacion: ${data.vote_average} 
                         <br>
                         <br>
-                        Duracion : ${data.runtime}
+                        Duracion : ${data.runtime} minutos
                         <br>
                         <br>
                         Sinópsis: ${data.overview}
                         <br>
                         <br>
-                        Género:  <a href="./detalleGenero.html?id=${data.genres[0].id}" class="colortitulo"> ${data.genres[0].name}  </a>
+                        Género:  <a href="./detalleGenero.html?id=${data.genres[0].id}" class="colortitulo"> ${data.genres[0].name}, ${data.genres[1].name}  </a>
                         <br>
                         <br>
                         <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
+                        <button class="fav">Ver recomendaciones</button> </a>
                         </p> 
                     `;
         

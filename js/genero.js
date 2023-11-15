@@ -12,10 +12,10 @@ fetch (urlGenero)
         console.log(data);
         let gen=document.querySelector(".generospys")
         let generos= " "
-        for (let i = 0; i < data.genres.length; i++) {
+        for (let i = 0; i < 18; i++) {
             generos +=  
-            `<li class="tiposdegen"> <a href="./detalleGenero.html" >
-            <h4>${data.genres[i].name}</h4></li> </a> `
+            ` <li class="tiposdegen"> <a href="./detalleGenero.html" > 
+            <h4>${data.genres[i].name} </h4> </li>  </a> `
     }
 
 

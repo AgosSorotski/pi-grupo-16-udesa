@@ -13,12 +13,15 @@ fetch (urlGenero)
         let pp =document.querySelector(".pp")
         let detgeneros= []
         for (let i = 0; i < data.results.length; i++) {
-            detgeneros +=                                 //poner bien esto
-            `<article ">
-            <li><a href="./detallePelicula.html?id=${data.results[i].id}"> <h3>${data.results[i].title}</h3>
-            <section class="borde"> <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" alt= " " class="imgpp">
-             /section> 
-        </article>`
+            detgeneros +=                                
+            `
+            <article class="borde">
+            <li><a href="./detallePelicula.html?id=${data.results[i].id}" class="peliculasp" >
+            <section> <img src="https://image.tmdb.org/t/p/w500/${data.results[i].poster_path}" class="imgpp">
+            <h3 class="nombreye" >${data.results[i].title}</h3>
+            <p class="nombreye"> Fecha estreno: ${data.results[i].release_date}</p>
+            </section> 
+            </article>`;
         
         }
         pp.innerHTML=detgeneros

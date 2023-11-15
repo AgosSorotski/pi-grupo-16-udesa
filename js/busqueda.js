@@ -22,17 +22,18 @@ if (Busqueda === "") {
                 noresult.style.color = "red"
             
             } else {
-                let resultados = document.querySelector(".resultsbusqueda");
+                let resultados = document.querySelector(".pp");
                 let busqul = [];
                 for (let i = 0; i < datos.results.length; i++) {
                         busqul += `
-                                <li class = "imgpp">
-                                    <a href="./detallePelicula.html?id=${datos.results[i].id}" class = "peliculasp"> <h2> ${datos.results[i].title}</h2> 
-                                    <section class="borde"> <img src="https://image.tmdb.org/t/p/w500/${datos.results[i].poster_path}" alt= " " class="imgpp">
+                                <li class = "borde">
+                                    <a href="./detallePelicula.html?id=${datos.results[i].id}" class = "peliculasp"> 
+                                    <img src="https://image.tmdb.org/t/p/w500/${datos.results[i].poster_path}" alt= " " class="imgpp">
+                                    <h2 class="nombreye"> ${datos.results[i].title}</h2> 
                                     </a>
-                                    </section>
                                     
                                 </li>`;
+                                
       
 
                 }
