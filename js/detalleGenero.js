@@ -13,14 +13,13 @@ fetch (urlGenero)
         let pp=document.querySelector(".pp")
         let detgeneros= " "
         for (let i = 0; i < data.genres.length; i++) {
-            detgeneros +=  
-            `<article class="borde">
+            detgeneros +=                                 //poner bien esto
+            `<article ">
             <li><a href="./detallePelicula.html">
-            <img class="imgpp"
-                        src="./img/extraordinario.jpg"></a></li> <img class="imgpp" src="${data.results[i].poster_path}"></a></li>
-                    <h4 class="nombreye">${data.genres[i].name}</h4>
+            <section class="borde"> <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt= " " class="imgpp">
+             /section>  <h4 class="nombreye">${data.name[i]}</h4>
         </article>`
-            
+        
         }
         pp.innerHTML=detgeneros
         })

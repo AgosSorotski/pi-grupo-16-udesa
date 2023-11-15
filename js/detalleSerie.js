@@ -15,8 +15,8 @@ fetch (urlDetalle)
             detalle +=  
         `<a href= "./detallePelicula.html?id=${data.id}" >
                     <h3 class="titulodetalle">${data.title} </h3>
-                    <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt= " " class="imgpp">
-                    </a>`;
+                    <section class="borde"> <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt= " " class="imgpp">
+                    </section> </a>`;
         
         det.innerHTML = detalle
         })
