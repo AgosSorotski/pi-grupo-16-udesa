@@ -1,8 +1,20 @@
-let string=location.search
+let string=location.search;
 let data=new URLSearchParams(string);
-let ID = data.get("id")
+let ID = data.get("id");
 
 let urlDetalle= `https://api.themoviedb.org/3/movie/${ID}?api_key=325b851d442abfa1f66681afca0f296b`
+let endpoint= `https://api.themoviedb.org/3/movie/${ID}/videos?api_key=325b851d442abfa1f66681afca0f296b`
+
+
+       
+let estreno = document.querySelector(".estreno");
+let duracion = document.querySelector(".duracion");
+let calificacion = document.querySelector(".calificacion");
+let sinopsis = document.querySelector(".sinopsis");
+let generos = document.querySelector(".generos_");
+let imagen = document.querySelector(".imgpp");
+let titulo = document.querySelector(".titulodetalle");
+let link = document.querySelector(".link");
 
 fetch (urlDetalle)  
     .then(function(response){
@@ -10,56 +22,49 @@ fetch (urlDetalle)
     })
     .then(function(data){
         console.log(data);
-        let det = document.querySelector(".detalle");
-        let detalle = ""; 
-            detalle +=  
-        `<a href= "./detallePelicula.html?id=${data.id}" >
-                    <h3 class="titulodetalle">${data.title} </h3>
-                    <section class="borde"> <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt= " " class="imgpp">
-                    </section> </a>`;
         
-        det.innerHTML = detalle
-        })
-        .catch(function(error){
-            console.log(error);
-        })
+        imagen.src= `https://image.tmdb.org/t/p/w500/${data.poster_path} `;
+        titulo.innerText= " " + data.title ;
+        calificacion.innerText = "Calificacion: " + data.vote_average;
+        duracion.innerText = "Duracion: " + data.runtime + " minutos"
+        estreno.innerText = "Fecha de estreno: " + data.release_date;
+        sinopsis.innerText = "Sinopsis: " + data.overview;        ;
+        generos.innerText = "Generos: " + data.genres[0].name
+        //for (let i = 0; i < data.genres.length; i++) {
+          //  genero +=                                
+            //` <a href="./detalleGenero.html?id=${data.genres[i].id}" > `;
+        
+        //}
+        //pp.innerHTML=detgenero
+    })
+    .catch(function(error){
+        console.log(error);
+    }) 
 
-
-fetch (urlDetalle)  
+    .catch(function(error){
+        console.log(error);
+    })
+       
+fetch (endpoint)  
     .then(function(response){
         return response.json()
     })
     .then(function(data){
         console.log(data);
-        let det = document.querySelector(".informacion");
-        let detalle = ""; 
-            detalle +=  
-        ` <p class="estreno" >Fecha estreno: ${data.release_date} </p>
-                        <br>
-                        <br>
-                        <p>
-                        Calificacion: ${datavote_average} minutos
-                        <br>
-                        <br>
-                        Duracion : ${data.runtime}
-                        <br>
-                        <br>
-                        Sinópsis: ${data.overview}
-                        <br>
-                        <br>
-                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo">${data.genres[0].name}, ${data.genres[0].name} </a>
-                        <br>
-                        <br>
-                        <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
-                        <br>
-                        <br>
-                        <button class="fav">Ver recomendaciones</button> 
-
-                        </p> 
-                    `;
+        let video=document.querySelector(".video")
+        if (data.results.length > 0){
+            let video1= data.results[0]
+            let videoURL= `http://www.youtube.com/embed/${video1.key}`
+            let trailer= 
+            `<div class="detalle"> 
+            <iframe class="videodetalle" src="${videoURL}"> </iframe> </div>`
         
-        det.innerHTML = detalle
-        })
+        video.innerHTML= trailer
+
+        }
+
+    })
+
         .catch(function(error){
             console.log(error);
         })
