@@ -404,12 +404,5 @@ color: #CBB26A;
         align-items: center;
         display: flex;
     }
-    .estreno2{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        color: #CBB26A;
-        margin-right: 0px;
-    }
+    
 }

@@ -31,6 +31,10 @@ if (Busqueda === "") {
                                     <img src="https://image.tmdb.org/t/p/w500/${datos.results[i].poster_path}" alt= " " class="imgpp">
                                     <h2 class="nombreye"> ${datos.results[i].title}</h2> 
                                     <p class="nombreye" >Fecha estreno: ${datos.results[i].release_date} </p>
+<<<<<<< HEAD
+=======
+                                    
+>>>>>>> 39b3709a6425375c3c146944d85722b13fc70d35
                                     </a>
                                     
                                 </section>`;
