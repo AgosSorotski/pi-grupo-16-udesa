@@ -25,11 +25,11 @@ fetch (urlDetalle)
         
         imagen.src= `https://image.tmdb.org/t/p/w500/${data.poster_path} `;
         titulo.innerText= " " + data.title ;
-        calificacion.innerText = "Calificacion:" + data.vote_average;
-        duracion.innerText = "Duracion:" + data.runtime;
-        estreno.innerText = "Fecha de estreno:" + data.release_date;
-        sinopsis.innerText = "Sinopsis:" + data.overview;        ;
-        //generos.innerText = "Generos:" + data.genres[0].name
+        calificacion.innerText = "Calificacion: " + data.vote_average;
+        duracion.innerText = "Duracion: " + data.runtime + " minutos"
+        estreno.innerText = "Fecha de estreno: " + data.release_date;
+        sinopsis.innerText = "Sinopsis: " + data.overview;        ;
+        generos.innerText = "Generos: " + data.genres[0].name
         //for (let i = 0; i < data.genres.length; i++) {
           //  genero +=                                
             //` <a href="./detalleGenero.html?id=${data.genres[i].id}" > `;
@@ -56,7 +56,7 @@ fetch (endpoint)
             let video1= data.results[0]
             let videoURL= `http://www.youtube.com/embed/${video1.key}`
             let trailer= 
-            `<div> 
+            `<div class="detalle"> 
             <iframe class="videodetalle" src="${videoURL}"> </iframe> </div>`
         
         video.innerHTML= trailer
