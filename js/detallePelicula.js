@@ -40,6 +40,9 @@ fetch (urlDetalle)
         console.log(error);
     }) 
 
+    .catch(function(error){
+        console.log(error);
+    })
        
 fetch (endpoint)  
     .then(function(response){
@@ -59,8 +62,8 @@ fetch (endpoint)
 
         }
 
-        })
+    })
 
         .catch(function(error){
             console.log(error);
-        }) 
+        })
