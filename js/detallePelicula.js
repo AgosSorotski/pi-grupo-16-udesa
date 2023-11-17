@@ -44,16 +44,16 @@ fetch (urlDetalle)
                         Duracion : ${data.runtime} minutos
                         Sinópsis: ${data.overview}
                         Género:  <a href="./detalleGenero.html?id=${data.genres[0].id}" class="colortitulo"> ${data.genres[0].name}, ${data.genres[1].name}  </a>
-                        <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
-                        <button class="fav">Ver más</button> </a>
 
                         </p> 
                     `;
         
         det.innerHTML = detalle
     })
-    //* PREGUNTAR DE ACA PARA ABAJO *//
 
+    .catch(function(error){
+        console.log(error);
+    })
        
 fetch (endpoint)  
     .then(function(response){
@@ -73,8 +73,8 @@ fetch (endpoint)
 
         }
 
-        })
+    })
 
         .catch(function(error){
             console.log(error);
-        }) 
+        })
