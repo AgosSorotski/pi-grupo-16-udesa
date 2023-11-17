@@ -53,11 +53,25 @@ fetch (urlDetalle)
                         <br>
                         <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
                         <button class="fav">Ver recomendaciones</button> </a>
+
                         </p> 
                     `;
         
         det.innerHTML = detalle
+    })
+    //* PREGUNTAR DE ACA PARA ABAJO *//
+        let endpoint= `https://api.themoviedb.org/3/movie/movie_id/videos?language=en-US${ID}?api_key=325b851d442abfa1f66681afca0f296b`
+       
+        fetch (endpoint)  
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        console.log(data);
+        let video=document.querySelector(".detalle")
+        video.src=`${data.video}`
         })
+
         .catch(function(error){
             console.log(error);
         })

@@ -365,12 +365,12 @@ color: #CBB26A;
     }
 
 
-    .blanco{
+   .blanco{
         justify-content: center;
         align-items: center;
         display: flex;
     
-    }
+   }
 
 
     .bordefotos{
@@ -400,5 +400,13 @@ color: #CBB26A;
         justify-content: center;
         align-items: center;
         display: flex;
+    }
+    .estreno2{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        color: #CBB26A;
+        margin-right: 0px;
     }
 }
