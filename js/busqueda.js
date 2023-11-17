@@ -14,7 +14,7 @@ if (Busqueda === "") {
         
         })
         .then(function (datos) {
-            console.log(datos);
+            console.log(datos.results.length == 0);
             if (datos.results.length == 0) {
                 let noresult = document.querySelector(".termino")
                 noresult.innerHTML = "No se encontraron coincidencias con el término buscado"

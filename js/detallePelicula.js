@@ -14,7 +14,7 @@ let sinopsis = document.querySelector(".sinopsis");
 let generos = document.querySelector(".generos_");
 let imagen = document.querySelector(".imgpp");
 let titulo = document.querySelector(".titulodetalle");
-
+let link = document.querySelector(".link");
 
 fetch (urlDetalle)  
     .then(function(response){
@@ -22,19 +22,20 @@ fetch (urlDetalle)
     })
     .then(function(data){
         console.log(data);
-        //let generos1= ""
         
-        //for (let i = 0; i < data.genres.length; i++) {
-            //generos1 += `${data.genres[0]} `;
-       // }
         imagen.src= `https://image.tmdb.org/t/p/w500/${data.poster_path} `;
         titulo.innerText= " " + data.title ;
         calificacion.innerText = "Calificacion:" + data.vote_average;
         duracion.innerText = "Duracion:" + data.runtime;
         estreno.innerText = "Fecha de estreno:" + data.release_date;
         sinopsis.innerText = "Sinopsis:" + data.overview;        ;
-        generos.innerText = "Generos:" + data.genres[0].name
-
+        //generos.innerText = "Generos:" + data.genres[0].name
+        //for (let i = 0; i < data.genres.length; i++) {
+          //  genero +=                                
+            //` <a href="./detalleGenero.html?id=${data.genres[i].id}" > `;
+        
+        //}
+        //pp.innerHTML=detgenero
     })
     .catch(function(error){
         console.log(error);
