@@ -26,19 +26,14 @@ if (Busqueda === "") {
                 let busqul = [];
                 for (let i = 0; i < datos.results.length; i++) {
                         busqul += `
-                                <li class = "borde">
+                                <section class = "borde">
                                     <a href="./detallePelicula.html?id=${datos.results[i].id}" class = "peliculasp"> 
                                     <img src="https://image.tmdb.org/t/p/w500/${datos.results[i].poster_path}" alt= " " class="imgpp">
                                     <h2 class="nombreye"> ${datos.results[i].title}</h2> 
-                                    <p class="estreno2" >Fecha estreno: ${datos.results[i].release_date} </p>
-                                    <p class="estreno2">Calificacion: ${datos.results[i].vote_average}</p>
-                                    <p class="estreno2">Sinópsis: ${datos.results[i].overview}</p>
-                                    <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>
-                                    <button class="fav">Ver recomendaciones</button> </a>
-                                    </p> 
+                                    <p class="nombreye" >Fecha estreno: ${datos.results[i].release_date} </p>
                                     </a>
                                     
-                                </li>`;
+                                </section>`;
                                 
       
 
@@ -46,7 +41,7 @@ if (Busqueda === "") {
                 resultados.innerHTML = busqul
                 let term = document.querySelector(".blanco")
                 term.innerHTML += Busqueda + " " + busqul + " ";
-                term.style.color = "white";
+               
 
                 
             }

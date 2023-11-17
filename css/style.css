@@ -184,8 +184,10 @@ ul {
     flex-wrap: wrap;   
     margin-left: 100px;
     margin-right: 100px;
+
     
 }
+
     
 .videodetalle{
     display: flex;
@@ -209,6 +211,7 @@ ul {
     margin-right: 160px;
     justify-content: flex-end;
     align-items: center;
+
 }
 
 
