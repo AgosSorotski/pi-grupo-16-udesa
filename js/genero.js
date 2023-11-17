@@ -15,7 +15,7 @@ fetch (urlGenero)
         for (let i = 0; i < 18; i++) {
             generos +=  
             ` <li class="tiposdegen"> <a href="./detalleGenero.html" > 
-            <h4>${data.genres[i].name} </h4> </li>  </a> `
+            <h4>${data.genres[i].name } </h4> </li>  </a> `
     }
 
 

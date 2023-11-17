@@ -47,7 +47,7 @@ fetch (urlDetalle)
                         Sinópsis: ${data.overview}
                         <br>
                         <br>
-                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo">${data.genres[0].name}, ${data.genres[1].name} </a>
+                        <a href="./genero.html" class="colortitulo"> Género: </a> <a href="./detalleGenero.html" class="colortitulo">${data.genres[0].name}, ${data.genres[0].name} </a>
                         <br>
                         <br>
                         <a href="./favoritos.html"> <button class="fav">Agregar a Favoritos</button> </a>

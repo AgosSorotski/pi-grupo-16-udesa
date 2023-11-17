@@ -209,7 +209,7 @@ ul {
     margin-left: 160px;
     flex-wrap: wrap;
     margin-right: 160px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 
 }

@@ -6,8 +6,7 @@ console.log(endpointBusqueda);
 
 if (Busqueda === "") {
     alert("Oops!, parece que no escribiste nada.")
-} else if (Busqueda.length < 2) {
-    alert("Tu busqueda debe contener al menos 2 caracteres")
+
 } else {
     fetch(endpointBusqueda)
         .then(function (response) {
@@ -23,7 +22,7 @@ if (Busqueda === "") {
             
             } else {
                 let resultados = document.querySelector(".pp");
-                let busqul = [];
+                let busqul = "";
                 for (let i = 0; i < datos.results.length; i++) {
                         busqul += `
                                 <section class = "borde">
@@ -31,10 +30,6 @@ if (Busqueda === "") {
                                     <img src="https://image.tmdb.org/t/p/w500/${datos.results[i].poster_path}" alt= " " class="imgpp">
                                     <h2 class="nombreye"> ${datos.results[i].title}</h2> 
                                     <p class="nombreye" >Fecha estreno: ${datos.results[i].release_date} </p>
-<<<<<<< HEAD
-=======
-                                    
->>>>>>> 39b3709a6425375c3c146944d85722b13fc70d35
                                     </a>
                                     
                                 </section>`;
@@ -44,7 +39,7 @@ if (Busqueda === "") {
                 }
                 resultados.innerHTML = busqul
                 let term = document.querySelector(".blanco")
-                term.innerHTML += Busqueda + " " + busqul + " ";
+                term.innerHTML += Busqueda + " " + " ";
                
 
                 
