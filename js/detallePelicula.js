@@ -22,21 +22,27 @@ fetch (urlDetalle)
     })
     .then(function(data){
         console.log(data);
-        
+
         imagen.src= `https://image.tmdb.org/t/p/w500/${data.poster_path} `;
         titulo.innerText= " " + data.title ;
         calificacion.innerText = "Calificacion: " + data.vote_average;
         duracion.innerText = "Duracion: " + data.runtime + " minutos"
         estreno.innerText = "Fecha de estreno: " + data.release_date;
-        sinopsis.innerText = "Sinopsis: " + data.overview;        ;
-        generos.innerText = "Generos: " + data.genres[0].name
-        //for (let i = 0; i < data.genres.length; i++) {
-          //  genero +=                                
-            //` <a href="./detalleGenero.html?id=${data.genres[i].id}" > `;
+        sinopsis.innerText = "Sinopsis: " + data.overview;    
+        let generoBoton = document.createElement("boton");
+        generoBoton.textContent = data.genres[0].name;
+        generoBoton.classList.add("botonClass"); 
+        generoBoton.addEventListener("click", function () {
+            let genreID = data.genres[0].id;
+            window.location.href = `./detalleGenero.html?id=${genreID}`;
+        });
+        generos.innerHTML = "Género: ";
+        generos.appendChild(generoBoton);      ;
+
+       
+        })
         
-        //}
-        //pp.innerHTML=detgenero
-    })
+
     .catch(function(error){
         console.log(error);
     }) 

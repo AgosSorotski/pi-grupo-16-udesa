@@ -24,6 +24,8 @@ if (Busqueda === "") {
                 let resultados = document.querySelector(".pp");
                 let busqul = "";
                 for (let i = 0; i < datos.results.length; i++) {
+                    if (datos.results[i].poster_path !== null){
+
                         busqul += `
                                 <section class = "borde">
                                     <a href="./detallePelicula.html?id=${datos.results[i].id}" class = "peliculasp"> 
@@ -33,7 +35,7 @@ if (Busqueda === "") {
                                     </a>
                                     
                                 </section>`;
-                                
+                    }       
       
 
                 }
